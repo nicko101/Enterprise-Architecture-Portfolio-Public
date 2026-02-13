@@ -8,7 +8,7 @@ this repository serves as the forensic flight recorder for the hybrid cloud arch
 **final status: validated**
 the following visual summarizes the end-to-end architectural integrity confirmed through cross-correlation of infrastructure, identity, and forensic pcap analysis.
 
-![architectural validation summary](./packet-life-forensics/slide-summart.png)
+![architectural validation summary](./slide-summart.png)
 
 ---
 
@@ -18,7 +18,7 @@ the following visual summarizes the end-to-end architectural integrity confirmed
 **validation**: implementation of teap (eap-tls, eap-mschapv2) via aruba clearpass.
 **outcome**: verified session for lab02\nick on device win10, authorizing network access.
 
-![digital identity card](./packet-life-forensics/slide-cppm.png)
+![digital identity card](./slide-cppm.png)
 
 ---
 
@@ -26,7 +26,7 @@ the following visual summarizes the end-to-end architectural integrity confirmed
 **validation**: the pa-vm dhcp server binds the authenticated identity to a specific ip.
 **outcome**: host win10 committed to ipv4 address 10.0.11.17 from the 10.0.11.0/24 pool.
 
-![dhcp assignment](./packet-life-forensics/slide-dhcp.png)
+![dhcp assignment](./slide-dhcp.png)
 
 ---
 
@@ -34,15 +34,15 @@ the following visual summarizes the end-to-end architectural integrity confirmed
 **validation**: policy-based forwarding (pbf) explicitly routes traffic through 'tunnel.200' for egress.
 **outcome**: traffic steered via pbf rule 'simulate-default-route'.
 
-![pbf routing logic](./packet-life-forensics/slide-pbf.png)
+![pbf routing logic](./slide-pbf.png)
 
 ---
 
 ### 4. cloud ingress and forensic analysis
-**artifact**: [raw capture (save.pcap)](./packet-life-forensics/save.pcap)
+**artifact**: [raw capture (save.pcap)](./save.pcap)
 **diagnostic insight**: pcap analysis confirms bidirectional dns flow and active tcp management, proving end-to-end path validity.
 
-![packet capture analysis](./packet-life-forensics/slide-pcap.png)
+![packet capture analysis](./slide-pcap.png)
 
 ---
 
