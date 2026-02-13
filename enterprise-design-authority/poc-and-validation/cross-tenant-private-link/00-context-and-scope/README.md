@@ -1,0 +1,3 @@
+# 00-Context-and-Scope
+
+Drafting documentation for this phase...

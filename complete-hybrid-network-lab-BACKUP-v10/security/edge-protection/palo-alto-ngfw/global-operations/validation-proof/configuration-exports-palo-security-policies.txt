@@ -1,0 +1,20 @@
+﻿================================================================================
+PALO ALTO NETWORKS - SECURITY POLICY SUMMARY
+Environment: Hybrid Enterprise Lab
+================================================================================
+
+1. EDGE PERIMETER RULES
+   - Allow-GP-Portal: Untrust -> DMZ (App: global-protect, saml)
+   - Outbound-General: Trust -> Untrust (App: web-browsing, ssl, dns)
+   - Block-High-Risk: Any -> Any (Category: command-and-control, malware)
+
+2. SSL DECRYPTION POLICY
+   - Type: SSL Forward Proxy
+   - Action: Decrypt (All Outbound except Financial/Health categories)
+   - Trust: Signed by Enterprise Issuing CA
+
+3. THREAT PREVENTION PROFILES
+   - Antivirus: Strict-Block
+   - Vulnerability: Default-Palo-Alto (Critical/High = Reset-Both)
+   - WildFire: Basic-Analysis-Upload
+================================================================================

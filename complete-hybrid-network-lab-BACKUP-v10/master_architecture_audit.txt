@@ -1,0 +1,319 @@
+﻿============================================================
+HYBRID NETWORK LAB: ARCHITECTURAL MANIFEST (2026)
+============================================================
+Objective: 100% Pillar Standardization & Centralized Validation
+Structure: Service-Oriented Taxonomy (SOT)
+============================================================
+Folder PATH listing
+Volume serial number is 189F-A9D6
+C:.
+|   master_architecture_audit.txt
+|   README.md
+|   
++---infrastructure
+|   |   infrastructure_final_audit.txt
+|   |   infrastructure_map.txt
+|   |   infra_current_state.txt
+|   |   infra_final_audit.txt
+|   |   README.md
+|   |   
+|   +---compute-and-servers
+|   |   |   README.md
+|   |   |   
+|   |   +---cloud-compute
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---az-file-sync
+|   |   |   |       README.md
+|   |   |   |       
+|   |   |   \---backup-and-recovery
+|   |   |           README.md
+|   |   |           
+|   |   \---servers
+|   |       |   README.md
+|   |       |   
+|   |       +---build-specs
+|   |       |       README.md
+|   |       |       
+|   |       +---domain-controllers
+|   |       |       README.md
+|   |       |       
+|   |       +---entra-id-connect
+|   |       |       README.md
+|   |       |       
+|   |       +---infrastructure-vms
+|   |       |       diagrams
+|   |       |       README.md
+|   |       |       
+|   |       +---issuing-ca
+|   |       |   |   README.md
+|   |       |   |   
+|   |       |   \---diagrams
+|   |       |           README.md
+|   |       |           
+|   |       +---ndes-server
+|   |       |       README.md
+|   |       |       
+|   |       \---root-ca
+|   |               README.md
+|   |               
+|   +---endpoint-and-device-management
+|   |   |   README.md
+|   |   |   
+|   |   +---autopilot-configs
+|   |   |       README.md
+|   |   |       
+|   |   +---compliance-logic
+|   |   |       README.md
+|   |   |       
+|   |   \---intune-policies
+|   |           README.md
+|   |           
+|   +---identity-and-trust
+|   |   |   README.md
+|   |   |   
+|   |   +---active-directory-ds
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   \---service-accounts
+|   |   |           README.md
+|   |   |           
+|   |   +---certificate-services
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   \---.docs
+|   |   |       |   README.md
+|   |   |       |   
+|   |   |       \---.assets
+|   |   \---entra-id-cloud-sync
+|   |       |   README.md
+|   |       |   
+|   |       +---app-registrations
+|   |       |       README.md
+|   |       |       
+|   |       +---diagrams
+|   |       |       README.md
+|   |       |       
+|   |       \---enterprise-apps
+|   |               README.md
+|   |               
+|   +---platform-and-virtualisation
+|   |   |   README.md
+|   |   |   
+|   |   +---diagrams
+|   |   |       README.md
+|   |   |       
+|   |   \---hypervisor-proxmox
+|   |           README.md
+|   |           
+|   +---storage-and-data-services
+|   |   |   README.md
+|   |   |   
+|   |   +---data-protection
+|   |   |       README.md
+|   |   |       
+|   |   \---hybrid-file-services
+|   |           README.md
+|   |           
+|   \---validation-proof
+|           app-registrations.png
+|           zero-trust-hybrid-architecture-verification.pdf
+|           
++---networking
+|   |   networking_final_audit.txt
+|   |   networking_structure_map.txt
+|   |   README.md
+|   |   
+|   +---connectivity-and-routing
+|   |   |   README.md
+|   |   |   
+|   |   +---cloud-networking
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---configuration-exports
+|   |   |   |       README.md
+|   |   |   |       
+|   |   |   \---diagrams
+|   |   |           README.md
+|   |   |           
+|   |   \---routing
+|   |       |   README.md
+|   |       |   
+|   |       +---configuration-exports
+|   |       |       palo
+|   |       |       README.md
+|   |       |       
+|   |       +---default-vr
+|   |       |       README.md
+|   |       |       
+|   |       +---diagrams
+|   |       |       README.md
+|   |       |       
+|   |       \---guest-vr
+|   |           |   README.md
+|   |           |   
+|   |           \---.docs
+|   |               |   README.md
+|   |               |   
+|   |               \---.assets
+|   +---dns-and-name-resolution
+|   |   |   README.md
+|   |   |   
+|   |   +---dhcp
+|   |   |       README.md
+|   |   |       
+|   |   \---dns
+|   |       |   README.md
+|   |       |   
+|   |       +---azure-dns
+|   |       |       README.md
+|   |       |       
+|   |       \---on-prem-dns
+|   |           |   README.md
+|   |           |   
+|   |           \---configuration-exports
+|   |                   dfs
+|   |                   README.md
+|   |                   Zones
+|   |                   
+|   +---switching-and-segmentation
+|   |   |   README.md
+|   |   |   
+|   |   +---on-prem-switching
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---configuration-exports
+|   |   |   |       palo
+|   |   |   |       README.md
+|   |   |   |       
+|   |   |   \---diagrams
+|   |   |           README.md
+|   |   |           
+|   |   \---wired-and-wireless
+|   |       |   README.md
+|   |       |   
+|   |       +---configuration-exports
+|   |       |       README.md
+|   |       |       
+|   |       +---design-docs
+|   |       |       README.md
+|   |       |       
+|   |       \---diagrams
+|   |               README.md
+|   |               
+|   +---validation-proof
+|   |       azure-vnet-topology.png
+|   |       azure-vpn-bgp-arm-template.png
+|   |       bridge.png
+|   |       consumer-hub.png
+|   |       dhcp.png
+|   |       gns3-logic.png
+|   |       gns3-topology.png
+|   |       manual-azdns.png
+|   |       network-anatomy.png
+|   |       s2s.png
+|   |       virtual-router-logic.png
+|   |       vr-segmentation.png
+|   |       
+|   \---virtualisation-fabric
+|       |   README.md
+|       |   
+|       \---configuration-exports
+|               palo
+|               README.md
+|               
+\---security
+    |   hidden_security_files.txt
+    |   README.md
+    |   security_evidence_final.txt
+    |   security_final_audit.txt
+    |   
+    +---edge-protection
+    |   |   README.md
+    |   |   
+    |   \---palo-alto-ngfw
+    |       |   README.md
+    |       |   
+    |       +---app-id-policies
+    |       |       README.md
+    |       |       
+    |       +---global-operations
+    |       |   |   README.md
+    |       |   |   
+    |       |   +---configuration-exports
+    |       |   |       palo-security-policies.txt
+    |       |   |       README.md
+    |       |   |       
+    |       |   \---diagrams
+    |       |           README.md
+    |       |           
+    |       +---network-segmentation
+    |       |   |   README.md
+    |       |   |   
+    |       |   +---dhcp-services
+    |       |   |       README.md
+    |       |   |       
+    |       |   +---virtual-routers
+    |       |   |       README.md
+    |       |   |       
+    |       |   \---vlan-interfaces
+    |       |           README.md
+    |       |           
+    |       +---ssl-decryption
+    |       |       README.md
+    |       |       
+    |       +---threat-prevention
+    |       |       README.md
+    |       |       
+    |       \---user-id-mapping
+    |               README.md
+    |               
+    +---identity-governance
+    |   |   README.md
+    |   |   
+    |   +---conditional-access
+    |   |       README.md
+    |   |       
+    |   \---hybrid-identity-sync
+    |           README.md
+    |           
+    +---network-access-control
+    |   |   README.md
+    |   |   
+    |   \---aruba-clearpass
+    |       |   README.md
+    |       |   
+    |       +---.docs
+    |       |   |   README.md
+    |       |   |   
+    |       |   \---.assets
+    |       +---device-onboarding
+    |       |   |   README.md
+    |       |   |   
+    |       |   \---diagrams
+    |       |           README.md
+    |       |           
+    |       +---endpoint-onguard
+    |       |       README.md
+    |       |       
+    |       +---guest-access
+    |       |       README.md
+    |       |       
+    |       \---policy-manager
+    |               diagrams
+    |               README.md
+    |               
+    +---secure-remote-access
+    |   |   README.md
+    |   |   
+    |   \---global-protect
+    |           README.md
+    |           
+    \---validation-proof
+        |   nac.png
+        |   onboard.png
+        |   security-orchestration.png
+        |   ssl-forward-proxy-inspection.png
+        |   
+        \---.assets
+
