@@ -1,24 +1,22 @@
-﻿# enterprise architecture portfolio
-## hybrid cloud infrastructure and security governance
+﻿# enterprise-hybrid-architecture-portfolio
 
-this repository documents a comprehensive engineering lifecycle, spanning from high-level design authority to the execution of a fully validated hybrid-cloud environment. it serves as the centralized source of truth for technical designs, configurations, and operational evidence.
-
----
-
-## portfolio directory
-
-### 1. [enterprise design authority](./enterprise-design-authority/)
-**the architectural blueprint** houses master governance and technical standards. it contains the high-level logic for l3 transit, virtual router (vr) segmentation, and security policy frameworks.
-
-### 2. [complete hybrid network lab](./complete-hybrid-network-lab/)
-**the engineering execution** the technical implementation of the enterprise on-premise to azure migration.
-* **networking**: bgp fabric, s2s vpn tunnels, and transit gateway logic.
-* **security**: palo alto ngfw policies (app-id/user-id), ssl decryption, and identity governance.
+| ![Architecture Blueprint](./complete-hybrid-network-lab/infrastructure/compute-and-servers/validation-proof/diagrams/blueprint-lab02.jpg.png) | **architectural validation notice** <br><br> this portfolio represents a **fully functional enterprise network environment (LAB02)**, deployed as an integrated ecosystem. <br><br> **audit status**: this repository is currently being populated with forensic artifacts, configuration exports, and digitized logs (notebooklm) following successful system validation. |
+| :--- | :--- |
 
 ---
 
-## engineering pillars
-every technical deployment adheres to a standardized validation framework to ensure production-readiness:
-* **design docs**: architectural requirements and ip addressing schemas.
-* **configuration**: native exports (xml, json, cli) of applied security and network logic.
-* **validation proof**: operational evidence including logs, session tables, and connectivity status.
+## architecture pillars
+* [**infrastructure**](./complete-hybrid-network-lab/infrastructure/) - identity core, active directory, and proxmox hypervisor.
+* [**networking**](./complete-hybrid-network-lab/networking/) - azure hub-and-spoke routing and cloud gateways.
+* [**security**](./complete-hybrid-network-lab/security/) - palo alto ngfw, globalprotect, and edge enforcement.
+
+---
+
+## navigation
+* [access validation-proof hub](./complete-hybrid-network-lab/security/edge-protection/validation-proof/README.md)
+* [packet life forensics (external repo)](https://github.com/nicko101/packet-life-forensics)
+
+---
+
+## system integrity & verification
+the contents of this report represent a fully functional, unified test environment. every component—from the azure cloud ingress to the aruba clearpass identity engine—has been confirmed as working together in a live, integrated state. 
