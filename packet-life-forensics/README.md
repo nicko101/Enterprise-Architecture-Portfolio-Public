@@ -38,6 +38,13 @@ this repository serves as the forensic flight recorder for the hybrid cloud arch
 
 ---
 
+### 5. architectural validation summary
+**status**: complete. the following visual summarizes the end-to-end architectural integrity confirmed through cross-correlation.
+
+![validation summary](./Packet-Life-Forensics/slide-summart.png)
+
+---
+
 ## technical diagnostics
 * **azure lb**: regional 'standard' sku (nf-elb) deployed in west europe.
 * **health probes**: port 443 monitored every 5 seconds for backend availability.
@@ -47,9 +54,3 @@ this repository serves as the forensic flight recorder for the hybrid cloud arch
 
 ## cognitive synthesis & notebooklm
 the narrative components of this forensic timeline were synthesized using **notebooklm**. by feeding raw pcap analysis, clearpass session logs, and architectural configurations into the engine, i have ensured that the "packet life story" is grounded strictly in the primary source data of this lab. this represents an ai-augmented approach to complex architectural auditing.
-
----
-
-## architectural validation status
-**status: complete**
-end-to-end architectural integrity is confirmed through the cross-correlation of identity logs, pbf enforcement, and packet-level captures.
