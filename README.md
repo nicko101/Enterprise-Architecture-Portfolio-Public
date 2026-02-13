@@ -1,7 +1,6 @@
 ﻿# enterprise-hybrid-architecture-portfolio
 
-| ![Architecture Blueprint](./images/blueprint-lab02.jpg.png) | **architectural validation notice** <br><br> this repository represents a **fully functional enterprise network environment (lab02)**. <br><br> **audit status**: evidence and configuration exports are verified and centralized within the lab modules. |
-| :--- | :--- |
+this repository represents a **fully functional enterprise network environment (lab02)**. all architectural decisions were validated through live engineering trials and forensic analysis.
 
 ---
 
@@ -13,7 +12,7 @@
 ---
 
 ## system integrity
-the architecture described herein is a fully functional, integrated ecosystem. every decision was validated through live engineering trials and forensic analysis.
+audit status: evidence and configuration exports are verified and centralised within the individual lab modules.
 
 ---
 
