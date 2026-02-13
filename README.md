@@ -4,7 +4,15 @@ this repository represents a **fully functional enterprise network environment (
 
 ---
 
-### ??? cloud networking
+### 🏛️ architecture suite
+
+* **[complete-hybrid-network-lab](./complete-hybrid-network-lab)** - contains technical build data, including infrastructure configurations, networking topologies, and security policy sets.
+* **[enterprise-design-authority](./enterprise-design-authority)** - contains high-level strategy documents, engineering blueprints, and proof-of-concept (poc) validation results.
+* **[packet-life-forensics](./packet-life-forensics)** - contains binary evidence, packet captures (pcaps), and documentation regarding the forensic analysis of network traffic.
+
+---
+
+### ☁️ cloud networking
 
 the architecture is hosted on a high-availability virtualization cluster, utilizing tiered storage to separate management traffic from bulk data assets.
 
@@ -13,13 +21,13 @@ the architecture is hosted on a high-availability virtualization cluster, utiliz
 
 ---
 
-### ?? evidence & audit
+### 🔍 evidence & audit
 
 validation evidence and configuration exports for this service are centralized in the module-level hub. this ensures a clear chain of custody for all architectural changes and security policy implementations.
 
 ---
 
-### ??? engineering notes: forensic recovery
+### 🛠️ engineering notes: forensic recovery
 
 this repository includes documentation on the recovery of the pve management layer following a filesystem deadlock. key actions included:
 
@@ -29,7 +37,7 @@ this repository includes documentation on the recovery of the pve management lay
 
 ---
 
-### ?? navigation
+### 📂 navigation
 
 * **[access validation-proof hub]**
 * **[back to parent category]**
