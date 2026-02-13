@@ -1,27 +1,36 @@
-﻿# enterprise-hybrid-architecture-portfolio
+## enterprise-hybrid-architecture-portfolio
 
 this repository represents a **fully functional enterprise network environment (lab02)**. all architectural decisions were validated through live engineering trials and forensic analysis.
 
 ---
 
-## 📊 executive presentations & slide decks
-these decks synthesise the raw lab data into high-level architectural narratives for senior stakeholders.
+### ??? cloud networking
 
-* [**secure access fabric walkthrough (full deck)**](./complete-hybrid-network-lab/security/network-access-control/validation-proof/diagrams/Secure_Access_Fabric_Walkthrough.pdf) - *focus: zero-trust, medical device onboarding, and identity-based access.*
-* [**palo alto architectural strategy**](./enterprise-design-authority/palo-alto-strategy-summary.pdf) - *focus: zone-based security, migration logic, and transit-routing.*
+the architecture is hosted on a high-availability virtualization cluster, utilizing tiered storage to separate management traffic from bulk data assets.
 
----
-
-## architecture suite
-* [**complete-hybrid-network-lab**](./complete-hybrid-network-lab/) - technical build: infrastructure, networking, and security configurations.
-* [**enterprise-design-authority**](./enterprise-design-authority/) - strategy: engineering blueprints and poc validation.
-* [**packet-life-forensics**](./packet-life-forensics/) - evidence: the forensic journey and binary proof (pcaps).
+* **infrastructure resilience:** storage architecture was recently optimized to utilize a 1.2tb high-capacity pool for templates and virtual disks, ensuring the host os remains insulated from capacity-driven deadlocks.
+* **storage tiering:** implemented zfs reservations on the root partition to maintain cluster configuration availability during peak i/o events.
 
 ---
 
-## navigation
-* [back to main lab architecture](./README.md)
+### ?? evidence & audit
+
+validation evidence and configuration exports for this service are centralized in the module-level hub. this ensures a clear chain of custody for all architectural changes and security policy implementations.
 
 ---
 
-> **methodology note**: architectural visuals and slide evidence were synthesised by processing raw technical logs and running-configurations through **notebooklm** to ensure direct alignment with actual lab logic.
+### ??? engineering notes: forensic recovery
+
+this repository includes documentation on the recovery of the pve management layer following a filesystem deadlock. key actions included:
+
+* **capacity recovery:** manual purge of stale system journals and apt-cache to recover critical boot space.
+* **asset migration:** migration of 50gb of iso templates to secondary storage via cli to bypass gui lockout and restore write-access to the cluster filesystem.
+* **process restoration:** restoration of the **pve-cluster** service and cleanup of uninterruptible "zombie" kvm processes to normalize console access.
+
+---
+
+### ?? navigation
+
+* **[access validation-proof hub]**
+* **[back to parent category]**
+* **[back to main lab architecture]**
