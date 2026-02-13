@@ -1,6 +1,6 @@
 ## enterprise-hybrid-architecture-portfolio
 
-this repository represents a fully functional enterprise network environment (lab02). all architectural decisions were validated through live engineering trials and forensic analysis.
+this repository represents a fully functional enterprise network environment. all architectural decisions were validated through live engineering trials and forensic analysis.
 
 ---
 
